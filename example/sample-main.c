@@ -23,6 +23,10 @@ void init(void) {
 
 int main(){
     init();
+    display_string_xy("Addr", 75, 30);
+
+    display_string_xy("Level", 225, 30);
+
     int i;
     /* Initialise the DMX universe datastructure */
     for(i=0; i<512; i++)
@@ -66,8 +70,8 @@ int main(){
         char channel[4] = "000";
         sprintf(channel, "%03d", selectedChannel);
         sprintf(level, "%03d", currentLevel);
-        display_string_xy(channel, 50, 50);
-        display_string_xy("@", 100, 50);
-        display_string_xy(level, 150, 50);
+        display_string_xy(channel, 75, 50);
+        display_string_xy("@", 150, 50);
+        display_string_xy(level, 225, 50);
     }
 }
