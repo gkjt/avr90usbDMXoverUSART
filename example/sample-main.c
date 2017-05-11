@@ -1,5 +1,5 @@
 
-#include "test.h"
+#include "sample-main.h"
 
 /* Get a universe of DMZ values */
 DMXUniverse u;
